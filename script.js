@@ -6,7 +6,7 @@ document.getElementById("actForm").addEventListener("submit", function (e) {
     const caseNum = document.getElementById("case").value;
 
     switch (court) {
-        case "ВКС":
+        case 1:
             court = "vks";
             break;
         default:
