@@ -1,7 +1,7 @@
 document.getElementById("actForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const court = document.getElementById("court").value;
+    let court = document.getElementById("court").value;
     const year = document.getElementById("year").value;
     const caseNum = document.getElementById("case").value;
 
@@ -18,5 +18,5 @@ document.getElementById("actForm").addEventListener("submit", function (e) {
 
     // Display and/or redirect
     const result = document.getElementById("result");
-    result.innerHTML = `<a href="${url}" target="_blank">Open Judicial Act</a>`;
+    result.innerHTML = `<a href="${url}" target="_blank">${court}-${caseNum}/${year}</a>`;
 });
