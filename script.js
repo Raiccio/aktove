@@ -14,7 +14,7 @@ document.getElementById("actForm").addEventListener("submit", function (e) {
     }
     // Example pattern – adjust this to match the actual system logic
     //https://www.vks.bg/talkuvatelni-dela-ostk/vks-ostk-tdelo-2020-1-reshenie.pdf
-    const url = `https://www.${court}.bg/talkuvatelni-dela-ostk/${court}-ostk-tdelo-${year}-${caseNum}-reshenie.pd`;
+    const url = `https://www.${court}.bg/talkuvatelni-dela-ostk/${court}-ostk-tdelo-${year}-${caseNum}-reshenie.pdf`;
 
     // Display and/or redirect
     const result = document.getElementById("result");
